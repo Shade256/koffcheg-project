@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#083E28">
+    <link rel="apple-touch-icon" href="icon.svg">
     <title>КоФчег | Почувствуй вкус настоящей жизни</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +30,9 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#about" class="btn-nav">Найти нас</a>
+                <button id="lang-toggle" class="lang-switch">EN</button>
+                <a href="#login" class="btn-nav btn-login">Личный кабинет</a>
+                <a href="#about" class="btn-nav hidden-mobile">Найти нас</a>
                 <button class="burger" id="burger" aria-label="Открыть меню">
                     <span></span><span></span><span></span>
                 </button>
@@ -146,7 +151,8 @@
                     <!-- 1 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=500&auto=format&fit=crop" alt="Американо">
+                            <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=500&auto=format&fit=crop"
+                                alt="Американо">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -160,7 +166,8 @@
                     <!-- 2 -->
                     <div class="coffee-item fade-up delay-1">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500&auto=format&fit=crop" alt="Капучино">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500&auto=format&fit=crop"
+                                alt="Капучино">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -174,7 +181,8 @@
                     <!-- 3 -->
                     <div class="coffee-item fade-up delay-2">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=500&auto=format&fit=crop" alt="Латте">
+                            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=500&auto=format&fit=crop"
+                                alt="Латте">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -188,7 +196,8 @@
                     <!-- 4 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1572442388796-11668aa44cb0?q=80&w=500&auto=format&fit=crop" alt="Мокка">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668aa44cb0?q=80&w=500&auto=format&fit=crop"
+                                alt="Мокка">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -202,7 +211,8 @@
                     <!-- 5 -->
                     <div class="coffee-item fade-up delay-1">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=500&auto=format&fit=crop" alt="Флэт Уайт">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=500&auto=format&fit=crop"
+                                alt="Флэт Уайт">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -216,7 +226,8 @@
                     <!-- 6 -->
                     <div class="coffee-item fade-up delay-2">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=500&auto=format&fit=crop" alt="Раф">
+                            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=500&auto=format&fit=crop"
+                                alt="Раф">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -230,7 +241,8 @@
                     <!-- 7 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500&auto=format&fit=crop" alt="Эспрессо">
+                            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500&auto=format&fit=crop"
+                                alt="Эспрессо">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -244,7 +256,8 @@
                     <!-- 8 -->
                     <div class="coffee-item fade-up delay-1">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1461023058943-0708ce5262ea?q=80&w=500&auto=format&fit=crop" alt="Бамбл">
+                            <img src="https://images.unsplash.com/photo-1461023058943-0708ce5262ea?q=80&w=500&auto=format&fit=crop"
+                                alt="Бамбл">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -258,7 +271,8 @@
                     <!-- 9 -->
                     <div class="coffee-item fade-up delay-2">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=500&auto=format&fit=crop" alt="Бамбл фреш">
+                            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=500&auto=format&fit=crop"
+                                alt="Бамбл фреш">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -272,7 +286,8 @@
                     <!-- 10 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=500&auto=format&fit=crop" alt="Эспрессо-тоник">
+                            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=500&auto=format&fit=crop"
+                                alt="Эспрессо-тоник">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -297,7 +312,8 @@
                     <!-- 1 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=500&auto=format&fit=crop" alt="Какао">
+                            <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=500&auto=format&fit=crop"
+                                alt="Какао">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -311,7 +327,8 @@
                     <!-- 2 -->
                     <div class="coffee-item fade-up delay-1">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" alt="Горячий шоколад">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop"
+                                alt="Горячий шоколад">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -325,7 +342,8 @@
                     <!-- 3 -->
                     <div class="coffee-item fade-up delay-2">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?q=80&w=500&auto=format&fit=crop" alt="Матча">
+                            <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?q=80&w=500&auto=format&fit=crop"
+                                alt="Матча">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -339,7 +357,8 @@
                     <!-- 4 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=500&auto=format&fit=crop" alt="Чай">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=500&auto=format&fit=crop"
+                                alt="Чай">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -353,7 +372,8 @@
                     <!-- 5 -->
                     <div class="coffee-item fade-up delay-1">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=500&auto=format&fit=crop" alt="Фреш">
+                            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=500&auto=format&fit=crop"
+                                alt="Фреш">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -367,7 +387,8 @@
                     <!-- 6 -->
                     <div class="coffee-item fade-up delay-2">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=500&auto=format&fit=crop" alt="Лимонад">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=500&auto=format&fit=crop"
+                                alt="Лимонад">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -381,7 +402,8 @@
                     <!-- 7 -->
                     <div class="coffee-item fade-up">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=500&auto=format&fit=crop" alt="Альтернативное молоко">
+                            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=500&auto=format&fit=crop"
+                                alt="Альтернативное молоко">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -395,7 +417,8 @@
                     <!-- 8 -->
                     <div class="coffee-item fade-up delay-1">
                         <div class="coffee-img">
-                            <img src="https://images.unsplash.com/photo-1557800636-8ab37d4e1011?q=80&w=500&auto=format&fit=crop" alt="Сироп">
+                            <img src="https://images.unsplash.com/photo-1557800636-8ab37d4e1011?q=80&w=500&auto=format&fit=crop"
+                                alt="Сироп">
                             <button class="btn-add">&rarr;</button>
                         </div>
                         <div class="coffee-info">
@@ -413,14 +436,17 @@
         <!-- Promo Block -->
         <section id="promo" class="promo-video-section">
             <video class="promo-bg-video" autoplay loop muted playsinline>
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-pouring-coffee-in-a-white-cup-4033-large.mp4" type="video/mp4">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-pouring-coffee-in-a-white-cup-4033-large.mp4"
+                    type="video/mp4">
             </video>
             <div class="video-overlay"></div>
-            
+
             <div class="container relative z-index-2 fade-up promo-video-content">
                 <h2 class="promo-title">АВТОРСКОЕ<br>МЕНЮ</h2>
                 <p class="promo-desc">
-                    Наши бариста создают не просто кофе, а настоящие произведения искусства. Уникальные вкусы, идеальный баланс и эстетика в каждой чашке.
+                    Наши бариста создают не просто кофе, а настоящие произведения искусства. Уникальные вкусы, идеальный
+                    баланс и эстетика в каждой чашке.
                 </p>
                 <a href="#hot-cold" class="btn-rounded mt-2">Смотреть меню</a>
             </div>
@@ -491,11 +517,27 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-social">
-                <a href="#" aria-label="Facebook">Fb</a>
-                <a href="#" aria-label="Instagram">Ig</a>
-                <a href="#" aria-label="Twitter">Tw</a>
-                <a href="#" aria-label="VK">Vk</a>
-                <a href="#" aria-label="Telegram">Tg</a>
+                <a href="#" aria-label="Telegram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
             </div>
             <nav class="footer-nav">
                 <a href="#">Главная</a>
@@ -509,6 +551,7 @@
             </div>
         </div>
     </footer>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 
