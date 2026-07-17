@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КоФчег | Почувствуй вкус настоящей жизни</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">КоФчег</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#bestsellers">Хиты</a></li>
+                    <li><a href="#hot-cold">Меню</a></li>
+                    <li><a href="#promo">Авторское</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#about" class="btn-nav">Найти нас</a>
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-container">
+                <h1 class="hero-title fade-up">Почувствуй вкус<br>настоящей жизни</h1>
+
+                <div class="hero-image-wrapper fade-up delay-1">
+                    <div class="glow"></div>
+                    <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=800&auto=format&fit=crop"
+                        alt="Кружка кофе" class="hero-cup">
+
+                    <!-- Decorative beans -->
+                    <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=200&auto=format&fit=crop"
+                        alt="bean" class="decor-bean b1" style="clip-path: circle(35%);">
+                    <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=200&auto=format&fit=crop"
+                        alt="bean" class="decor-bean b2" style="clip-path: circle(40%);">
+                    <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=200&auto=format&fit=crop"
+                        alt="bean" class="decor-bean b3" style="clip-path: circle(30%);">
+                </div>
+
+                <a href="#bestsellers" class="scroll-down">
+                    <span class="arrow">&darr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Best Selling Items -->
+        <section id="bestsellers" class="bestsellers section-padding">
+            <div class="container">
+                <h2 class="section-title-dark fade-up">Хиты продаж</h2>
+                <p class="section-subtitle-dark fade-up">Самые любимые напитки наших гостей, созданные с душой.</p>
+
+                <div class="bestseller-grid">
+                    <!-- Card 1 (Yellow) -->
+                    <div class="bs-card card-yellow fade-up">
+                        <div class="bs-img-container">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668aa44cb0?q=80&w=400&auto=format&fit=crop"
+                                alt="Классический мокка" class="rounded-img">
+                        </div>
+                        <div class="bs-content">
+                            <h3>Классический Мокка</h3>
+                            <p>Идеальное сочетание эспрессо, премиального шоколада и взбитого молока.</p>
+                            <div class="bs-footer">
+                                <span class="price">350 ₽</span>
+                                <button class="btn-circle">&rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (White) -->
+                    <div class="bs-card card-white fade-up delay-1">
+                        <div class="bs-img-container">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=400&auto=format&fit=crop"
+                                alt="Белый мокка" class="rounded-img">
+                        </div>
+                        <div class="bs-content">
+                            <h3>Белый Мокка</h3>
+                            <p>Нежный вкус белого шоколада с двойной порцией мягкого эспрессо.</p>
+                            <div class="bs-footer">
+                                <span class="price">380 ₽</span>
+                                <button class="btn-circle btn-dark">&rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Green) -->
+                    <div class="bs-card card-green fade-up delay-2">
+                        <div class="bs-img-container">
+                            <img src="https://images.unsplash.com/photo-1461023058943-0708ce5262ea?q=80&w=400&auto=format&fit=crop"
+                                alt="Фраппе" class="rounded-img">
+                        </div>
+                        <div class="bs-content">
+                            <h3>Мокка Фраппе</h3>
+                            <p>Освежающий ледяной напиток с густым шоколадным сиропом.</p>
+                            <div class="bs-footer">
+                                <span class="price">420 ₽</span>
+                                <button class="btn-circle">&rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Brown) -->
+                    <div class="bs-card card-brown fade-up delay-3">
+                        <div class="bs-img-container">
+                            <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=400&auto=format&fit=crop"
+                                alt="Горячий шоколад" class="rounded-img">
+                        </div>
+                        <div class="bs-content">
+                            <h3>Горячий Шоколад</h3>
+                            <p>Густой, насыщенный шоколад, согревающий сердце в любую погоду.</p>
+                            <div class="bs-footer">
+                                <span class="price">320 ₽</span>
+                                <button class="btn-circle btn-yellow">&rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coffees -->
+        <section id="hot-cold" class="menu-section section-padding pt-0">
+            <div class="container">
+                <h2 class="section-title-dark fade-up">Кофе</h2>
+                <p class="section-subtitle-dark fade-up">Классика и авторские напитки, которые наполняют энергией.</p>
+
+                <div class="coffee-grid">
+                    <!-- 1 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=500&auto=format&fit=crop" alt="Американо">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Американо</h3>
+                                <span class="price">200 ₽</span>
+                            </div>
+                            <p>Насыщенный черный кофе для истинных ценителей.</p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="coffee-item fade-up delay-1">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500&auto=format&fit=crop" alt="Капучино">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Капучино</h3>
+                                <span class="price">250 ₽</span>
+                            </div>
+                            <p>Сбалансированный вкус эспрессо с плотной молочной пеной.</p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="coffee-item fade-up delay-2">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=500&auto=format&fit=crop" alt="Латте">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Латте</h3>
+                                <span class="price">270 ₽</span>
+                            </div>
+                            <p>Нежный молочный напиток с легким кофейным ароматом.</p>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668aa44cb0?q=80&w=500&auto=format&fit=crop" alt="Мокка">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Мокка</h3>
+                                <span class="price">300 ₽</span>
+                            </div>
+                            <p>Сочетание эспрессо, шоколада и взбитых сливок.</p>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="coffee-item fade-up delay-1">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=500&auto=format&fit=crop" alt="Флэт Уайт">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Флэт Уайт</h3>
+                                <span class="price">280 ₽</span>
+                            </div>
+                            <p>Двойной эспрессо с тонким слоем глянцевой пены.</p>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="coffee-item fade-up delay-2">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=500&auto=format&fit=crop" alt="Раф">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Раф</h3>
+                                <span class="price">320 ₽</span>
+                            </div>
+                            <p>Сливочный кофейный напиток с ванильным сахаром.</p>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500&auto=format&fit=crop" alt="Эспрессо">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Эспрессо</h3>
+                                <span class="price">150 ₽</span>
+                            </div>
+                            <p>Чистый, насыщенный вкус классического эспрессо.</p>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="coffee-item fade-up delay-1">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1461023058943-0708ce5262ea?q=80&w=500&auto=format&fit=crop" alt="Бамбл">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Бамбл</h3>
+                                <span class="price">350 ₽</span>
+                            </div>
+                            <p>Освежающий микс эспрессо, апельсинового сока и карамели.</p>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="coffee-item fade-up delay-2">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=500&auto=format&fit=crop" alt="Бамбл фреш">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Бамбл фреш</h3>
+                                <span class="price">380 ₽</span>
+                            </div>
+                            <p>Версия Бамбл на свежевыжатом апельсиновом соке.</p>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=500&auto=format&fit=crop" alt="Эспрессо-тоник">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Эспрессо-тоник</h3>
+                                <span class="price">320 ₽</span>
+                            </div>
+                            <p>Бодрящий холодный напиток с эспрессо и тоником.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Non-Coffees -->
+        <section class="menu-section section-padding pt-0">
+            <div class="container">
+                <h2 class="section-title-dark fade-up">Не кофе</h2>
+                <p class="section-subtitle-dark fade-up">Освежающие и согревающие альтернативы.</p>
+
+                <div class="coffee-grid">
+                    <!-- 1 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=500&auto=format&fit=crop" alt="Какао">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Какао</h3>
+                                <span class="price">250 ₽</span>
+                            </div>
+                            <p>Классический согревающий напиток родом из детства.</p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="coffee-item fade-up delay-1">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" alt="Горячий шоколад">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Горячий шоколад</h3>
+                                <span class="price">300 ₽</span>
+                            </div>
+                            <p>Густой, насыщенный шоколад высшего качества.</p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="coffee-item fade-up delay-2">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?q=80&w=500&auto=format&fit=crop" alt="Матча">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Матча</h3>
+                                <span class="price">320 ₽</span>
+                            </div>
+                            <p>Японский зеленый чай, приготовленный на молоке.</p>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=500&auto=format&fit=crop" alt="Чай">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Чай</h3>
+                                <span class="price">200 ₽</span>
+                            </div>
+                            <p>Ассортимент листового чая: черный, зеленый, фруктовый.</p>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="coffee-item fade-up delay-1">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=500&auto=format&fit=crop" alt="Фреш">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Фреш</h3>
+                                <span class="price">300 ₽</span>
+                            </div>
+                            <p>Свежевыжатые соки: апельсин, грейпфрут, яблоко.</p>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="coffee-item fade-up delay-2">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=500&auto=format&fit=crop" alt="Лимонад">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Лимонад</h3>
+                                <span class="price">250 ₽</span>
+                            </div>
+                            <p>Освежающий авторский лимонад со льдом и мятой.</p>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="coffee-item fade-up">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=500&auto=format&fit=crop" alt="Альтернативное молоко">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Альтернативное молоко</h3>
+                                <span class="price">+ 50 ₽</span>
+                            </div>
+                            <p>Кокосовое, миндальное, соевое, банановое или овсяное.</p>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="coffee-item fade-up delay-1">
+                        <div class="coffee-img">
+                            <img src="https://images.unsplash.com/photo-1557800636-8ab37d4e1011?q=80&w=500&auto=format&fit=crop" alt="Сироп">
+                            <button class="btn-add">&rarr;</button>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-header">
+                                <h3>Сироп</h3>
+                                <span class="price">+ 30 ₽</span>
+                            </div>
+                            <p>Карамель, ваниль, лесной орех, соленая карамель, кокос.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Block -->
+        <section id="promo" class="promo-video-section">
+            <video class="promo-bg-video" autoplay loop muted playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-pouring-coffee-in-a-white-cup-4033-large.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            
+            <div class="container relative z-index-2 fade-up promo-video-content">
+                <h2 class="promo-title">АВТОРСКОЕ<br>МЕНЮ</h2>
+                <p class="promo-desc">
+                    Наши бариста создают не просто кофе, а настоящие произведения искусства. Уникальные вкусы, идеальный баланс и эстетика в каждой чашке.
+                </p>
+                <a href="#hot-cold" class="btn-rounded mt-2">Смотреть меню</a>
+            </div>
+        </section>
+
+        <!-- Customer Reviews -->
+        <section id="reviews" class="reviews-section section-padding">
+            <div class="container">
+                <h2 class="section-title-dark fade-up">ОТЗЫВЫ ГОСТЕЙ</h2>
+
+                <div class="reviews-grid">
+                    <div class="review-card fade-up">
+                        <p class="review-text">«Это место стало для меня настоящим открытием. Невероятно вкусный кофе и
+                            потрясающая эстетика интерьера. Однозначно рекомендую!»</p>
+                        <div class="review-author">
+                            <span class="name">Анна С.</span>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-card fade-up delay-1">
+                        <p class="review-text">«Пожалуй, лучший флэт уайт в городе. Заходишь с шумной улицы и попадаешь
+                            в оазис спокойствия. Персонал очень приветливый.»</p>
+                        <div class="review-author">
+                            <span class="name">Михаил Т.</span>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-card fade-up delay-2">
+                        <p class="review-text">«Очень красивый и дорогой дизайн, при этом цены абсолютно адекватные за
+                            такое качество спешелти кофе. Теперь я ваш постоянный гость.»</p>
+                        <div class="review-author">
+                            <span class="name">Елена В.</span>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about" class="about-section section-padding pt-0">
+            <div class="container about-container">
+                <div class="about-content fade-up">
+                    <h2 class="section-title-dark">О нас</h2>
+                    <p>В самом сердце шумного мегаполиса мы создали «КоФчег» — место силы и вдохновения. Мы верим, что
+                        правильная чашка кофе способна изменить день, а искренняя улыбка бариста — согреть сердце.</p>
+                    <p>Наши зерна проходят строжайший отбор, а каждый десерт создается с любовью. Причаливайте к нам,
+                        чтобы насладиться моментом в атмосфере абсолютного комфорта и эстетики.</p>
+                    <a href="#" class="btn-dark-pill">Узнать больше &rarr;</a>
+                </div>
+                <div class="about-gallery fade-up delay-1">
+                    <div class="gallery-circles">
+                        <div class="circle c1"><img
+                                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=400&auto=format&fit=crop"
+                                alt="Интерьер"></div>
+                        <div class="circle c2"><img
+                                src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=400&auto=format&fit=crop"
+                                alt="Бариста"></div>
+                        <div class="circle c3"><img
+                                src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=400&auto=format&fit=crop"
+                                alt="Детали"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">Fb</a>
+                <a href="#" aria-label="Instagram">Ig</a>
+                <a href="#" aria-label="Twitter">Tw</a>
+                <a href="#" aria-label="VK">Vk</a>
+                <a href="#" aria-label="Telegram">Tg</a>
+            </div>
+            <nav class="footer-nav">
+                <a href="#">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#hot-cold">Меню</a>
+                <a href="#">Продукты</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2026 КоФчег. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
